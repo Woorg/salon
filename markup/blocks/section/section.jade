@@ -1,2 +1,20 @@
-mixin section(data)
-    .section
+mixin section-main-1(data)
+    .section.section_welcome
+        .section__in
+            h2.section__title.title
+                span #{data.title}
+            block
+
+mixin section-main-3(data)
+    .section.section_action
+        .section__in
+            h2.section__title.title
+                span #{data.title}
+            block
+
+mixin section-main-2(data)
+    .section&attributes()
+        .section__in
+            h2.section__title.title
+                span #{data.title}
+            block

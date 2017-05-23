@@ -1,8 +1,14 @@
+
 doctype html
 html(class="no-js", lang="ru")
 
     include ../blocks/head/head
     include ../blocks/header/header
+    include ../blocks/section/section
+    include ../blocks/text/text
+
+    include ../blocks/carousel/carousel
+
     include ../blocks/footer/footer
     include ../blocks/bottom/bottom
 
@@ -12,14 +18,27 @@ html(class="no-js", lang="ru")
     body.page
         |%=symbols=%
 
-        section.page__wrapper
+        .page__wrapper
             +header()
-            //- Include your components here
+
+            +section-main-1(section.main_1)
+                +text-index()
+
+            +section-main-3(section.main_2)
+                +carousel-discount()
+
+            +section-main-2(section.main_3)
+                +carousel-master()
+
+            +section-main-2(section.main_4)
+                +carousel-cosm()
+
+
+
             .page__buffer
 
         .page__footer
             +footer()
-            +bottom()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

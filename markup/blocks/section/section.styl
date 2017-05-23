@@ -1,1 +1,54 @@
+.section
+    overflow hidden
+    &.section_welcome
+        .section__in
+            position relative
+            padding-top 25px
+            min-height 630px
+            clearfix()
+            &:before
+                position absolute
+                top 48px
+                left -184px
+                bottom 0
+                content ''
+                width 638px
+                height 583px
+                background url('../images/content/index-img.jpg') 0 0 no-repeat
+                background-size cover
+    &.section_action
+        margin-top -47px
+        .section__in
+            padding-top 25px
+
+.section__in
+    position relative
+    // padding-top 25px
+    padding-bottom 20px
+    @extends .in
+    clearfix()
+
+.section__title
+    margin-bottom 10px
+    text-align right
+    span
+        position relative
+        display inline-block
+        line-height 1
+        &:after,
+        &:before
+            position absolute
+            top 50%
+            content ''
+            height 1px
+        &:after
+            right -198px
+            width 185px
+            background url('../images/general/section-title-right.png') 100% 0 no-repeat
+        &:before
+            left -1938px
+            width 1920px
+            background #000
+.title
+    @extends .title-h2
 

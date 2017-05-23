@@ -1,8 +1,8 @@
 mixin header(data)
     header.header
         .header__in
-            .header__col.header__col_left
-                nav.header__nav.nav
+            .header__col
+                nav.header__nav.nav.nav_left
                     ul.nav__list
                         li.nav__item
                             a.nav__link(href="#link") Главная
@@ -19,23 +19,24 @@ mixin header(data)
                 a.header__logo.logo(href="/") Duet family
 
                 .header__phones.phones
-                    .phones__phone 8 (812) 596-09-05
-                    .phones__phone 8 (812) 596-09-05
+                    a.phones__phone(href='tel:88125960905') 8 (812) 596-09-05
+                    a.phones__phone(href='tel:88125961442') 8 (812) 596-14-42
 
-                ul.header__social
-                    li.header__item
-                        a.header__link(href="#link") vk
-                    li.header__item
-                        a.header__link(href="#link") instagram
-                    li.header__item
-                        a.header__link(href="#link") twitter
-                    li.header__item
-                        a.header__link(href="#link") WhatsApp
-                    li.header__item
-                        a.header__link(href="#link") telegram
+                ul.header__social.social
+                    li.social__item.social__item_vk
+                        a.social__link(href="#link") vk
+                    li.social__item.social__item_inst
+                        a.social__link(href="#link") instagram
+                    li.social__item.social__item_twit
+                        a.social__link(href="#link") twitter
 
-            .header__col.header__col_right
-                nav.header__nav.nav
+                    li.social__item.social__item_whats
+                        a.social__link(href="#link") WhatsApp
+                    li.social__item.social__item_teleg
+                        a.social__link(href="#link") telegram
+
+            .header__col
+                nav.header__nav.nav.nav_right
                     ul.nav__list
                         li.nav__item
                             a.nav__link(href="#link") Акции
@@ -46,5 +47,5 @@ mixin header(data)
                         li.nav__item
                             a.nav__link(href="#link") контакты
 
-                a.header__button.button(href="#button") заказать обратный звонок
+                a.header__button.button(href="#button") запись в салон
 

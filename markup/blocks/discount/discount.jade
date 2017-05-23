@@ -1,2 +1,7 @@
-mixin discount(data)
-    .discount
+mixin discount-five(data)
+    a.discount(href='#link')
+        img(src="%=static=%images/content/discount.jpg", alt="")
+        .discount__w
+            .discount__title На любую услугу
+            .discount__number 5%
+            .discount__button.button.button_alt <span>жми прямо сейчас</span>

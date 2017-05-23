@@ -6,8 +6,11 @@
   "directories": {},
   "dependencies": {},
   "devDependencies": {
+    "carousel": "0.0.3",
     "gulp": "^3.9.1",
-    "jquery": "^3.2.1"
+    "jade-injected": "^1.0.2",
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
