@@ -1,0 +1,70 @@
+.map
+	color #757575
+	font-family $acline
+	font-size 23px
+	font-weight bold
+	line-height 25px
+	&__row
+		margin-bottom 15px
+		text-align center
+	&__address
+		position relative
+		display inline-block
+		&:after
+			position absolute
+			top -5px
+			left -35px
+			content ''
+			bg($marker-icon)
+
+	&__phones
+		position relative
+		padding-left 55px
+		@extends .ib
+		&:before
+			position absolute
+			top 4px
+			left 0
+			content ''
+			bg($phone-icon)
+	// &__phone
+
+	&__time
+		position relative
+		margin-left 40px
+		padding-left 55px
+
+		@extends .ib
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ''
+			bg($time-icon)
+
+
+	&__time-item
+		text-align left
+		span
+			display inline-block
+			width 72px
+
+
+.map-area
+	border-top 6px solid #CBDEA5
+	margin-bottom 33px
+	&__map
+		width 100%
+		padding-top 40%
+		background-color #CBDEA5
+		&:after
+			position absolute
+			z-index 1
+			top 0
+			left 0
+			content ''
+			width 120%
+			height 20px
+			box-shadow inset -8.8px 4.7px 10px 0 rgba(2, 3, 3, 0.3)
+
+

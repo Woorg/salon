@@ -1,25 +1,25 @@
 // .header
 
 .header__in
-    padding-top 20px
-    @extends .in
-    font-size 0
+	padding-top 20px
+	@extends .in
+	font-size 0
 
 .header__col
-    width 290px
-    @extends .ib
-    &.header__col_center
-        width 362px
+	width 290px
+	@extends .ib
+	&.header__col_center
+		width 362px
 
 .header__nav
-    margin-bottom 20px
+	margin-bottom 20px
 
 
 .header__logo
-    margin 24px auto 52px
+	margin 24px auto 52px
 
 .header__phones
-    margin-bottom 12px
+	margin-bottom 12px
 // .header__button
 
 
@@ -28,170 +28,171 @@
 
 
 .logo
-    display block
-    bg($logo)
-    &_small
-        bg($logo-small)
+	display block
+	bg($logo)
+	&_small
+		bg($logo-small)
 
 .nav
-    text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
-    color rgba(67, 67, 67, 0.94)
-    font-family $acline
-    font-size 25px
-    font-weight bold
-    line-height 25px
-    &_right
-        border-left 1px solid #000
-        .nav__item
-            background url('../images/general/nav-item-bottom-right.png') 0 0 no-repeat
-            text-align left
-    &_left
-        border-right 1px solid #000
-        .nav__item
-            background-position 100% 0
+	text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
+	color rgba(67, 67, 67, 0.94)
+	font-family $acline
+	font-size 25px
+	font-weight bold
+	line-height 25px
+	&_right
+		border-left 1px solid #000
+		.nav__item
+			background url('../images/general/nav-item-bottom-right.png') 0 0 no-repeat
+			text-align left
+	&_left
+		border-right 1px solid #000
+		.nav__item
+			background-position 100% 0
 // .nav__list
 
 .nav__item
-    background transparent url('../images/general/nav-item-bottom.png') 0 0 no-repeat
-    text-align right
-    &:first-child
-        background none
+	background transparent url('../images/general/nav-item-bottom.png') 0 0 no-repeat
+	text-align right
+	&:first-child
+		background none
 .nav__link
-    padding  30px 26px 40px 40px
-    display block
-    font-size 25px
-    color inherit
-    text-transform uppercase
-    text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
-    &:hover
-        color #8ebf43
+	padding  30px 26px 40px 40px
+	display block
+	font-size 25px
+	color inherit
+	text-transform uppercase
+	text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
+	&:hover
+		color #8ebf43
 
 .nav_horizontal
-    .nav__list
-        font-size 0
-        text-align center
-    .nav__item
-        position relative
-        margin-left -4px
-        display inline-block
-        vertical-align top
-        background none
-        &.is_active,
-        &:hover
-            z-index 1
-            text-shadow none
+	.nav__list
+		font-size 0
+		text-align center
+	.nav__item
+		position relative
+		margin-left -4px
+		margin-bottom 4px
+		display inline-block
+		vertical-align top
+		background none
+		&.is_active,
+		&:hover
+			z-index 1
+			text-shadow none
 
-            a
-                border-left 1px solid #8ebf43
-                border-right 1px solid #8ebf43
-                color #8ebf43
-        &:first-child
-            .nav__link
-                border-right 1px solid #fff
-            &.is_active
-                a
-                    border-right 1px solid #8ebf43
+			a
+				border-left 1px solid #8ebf43
+				border-right 1px solid #8ebf43
+				color #8ebf43
+		&:first-child
+			.nav__link
+				border-right 1px solid #fff
+			&.is_active
+				a
+					border-right 1px solid #8ebf43
 
-    a
-        border-left 1px solid #fff
-        padding 0 14px
-        width 100%
-        font-size 29px
-        font-weight normal
-        font-family $acline
-        color #FFF
-        line-height 1.2
-        text-transform uppercase
-        text-shadow none
+	a
+		border-left 1px solid #fff
+		padding 0 14px
+		width 100%
+		font-size 29px
+		font-weight normal
+		font-family $acline
+		color #FFF
+		line-height 1.2
+		text-transform uppercase
+		text-shadow none
 
 .phones
-    text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
-    color rgba(0, 0, 0, 0.94)
-    font-size 20px
-    font-weight bold
-    line-height 25px
-    text-align center
-    letter-spacing tracking(90)
-    &__phone
-        display block
-        color inherit
-        text-decoration none
-    &.phones_white
-        color #fff
-        text-align right
+	text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
+	color rgba(0, 0, 0, 0.94)
+	font-size 20px
+	font-weight bold
+	line-height 25px
+	text-align center
+	letter-spacing tracking(90)
+	&__phone
+		display block
+		color inherit
+		text-decoration none
+	&.phones_white
+		color #fff
+		text-align right
 .social
-    font-size 0
-    text-align center
-    &__item
-        position relative
-        margin-left 8px
-        @extends .ib
-        &:first-child
-            margin-left 0
-    &__link
-        display block
-        width 28px
-        height 28px
-        hide-text()
-        &:after
-            position absolute
-            top 0
-            left 0
-            content ''
-    &__item
-        &_vk
-            .social__link
-                &:after
-                    bg($vk-icon)
-        &_inst
-            .social__link
-                &:after
-                    bg($inst-icon)
+	font-size 0
+	text-align center
+	&__item
+		position relative
+		margin-left 8px
+		@extends .ib
+		&:first-child
+			margin-left 0
+	&__link
+		display block
+		width 28px
+		height 28px
+		hide-text()
+		&:after
+			position absolute
+			top 0
+			left 0
+			content ''
+	&__item
+		&_vk
+			.social__link
+				&:after
+					bg($vk-icon)
+		&_inst
+			.social__link
+				&:after
+					bg($inst-icon)
 
-        &_twit
-            .social__link
-                &:after
-                    bg($twit-icon)
+		&_twit
+			.social__link
+				&:after
+					bg($twit-icon)
 
-        &_whats
-            .social__link
-                &:after
-                    bg($whats-icon)
+		&_whats
+			.social__link
+				&:after
+					bg($whats-icon)
 
-        &_teleg
-            .social__link
-                &:after
-                    bg($tele-icon)
+		&_teleg
+			.social__link
+				&:after
+					bg($tele-icon)
 
 
 .social_big
-    .social__link
-        width 56px
-        height 56px
-    .social__item
-        &_vk
-            .social__link
-                &:after
-                    bg($vk-big-icon)
-        &_inst
-            .social__link
-                &:after
-                    bg($inst-big-icon)
+	.social__link
+		width 56px
+		height 56px
+	.social__item
+		&_vk
+			.social__link
+				&:after
+					bg($vk-big-icon)
+		&_inst
+			.social__link
+				&:after
+					bg($inst-big-icon)
 
-        &_twit
-            .social__link
-                &:after
-                    bg($twit-big-icon)
+		&_twit
+			.social__link
+				&:after
+					bg($twit-big-icon)
 
-        &_whats
-            .social__link
-                &:after
-                    bg($whats-big-icon)
+		&_whats
+			.social__link
+				&:after
+					bg($whats-big-icon)
 
-        &_teleg
-            .social__link
-                &:after
-                    bg($tele-big-icon)
+		&_teleg
+			.social__link
+				&:after
+					bg($tele-big-icon)
 
 
 

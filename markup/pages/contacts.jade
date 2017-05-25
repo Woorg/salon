@@ -1,0 +1,63 @@
+
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../blocks/head/head
+	include ../blocks/header/header
+	include ../blocks/section/section
+	include ../blocks/forms/forms
+
+	//- include ../blocks/text/text
+
+	include ../blocks/map/map
+
+	include ../blocks/footer/footer
+	include ../blocks/bottom/bottom
+
+
+	head
+		+head(head.defaults)
+	body.page
+		|%=symbols=%
+
+		.page__wrapper
+			+header()
+
+			+section-contacts(section.contacts)
+				img.section__image(src="%=static=%images/content/contacts-img.jpg" srcset="%=static=%images/content/contacts-img@2x.jpg 2x, %=static=%images/content/contacts-img@3x.jpg 3x")
+				.section__left
+					+form-contacts()
+
+			+section-second(section.about_second)
+				+map()
+
+			.map-area
+				.map-area__map#map
+
+
+			.page__buffer
+
+		.page__footer
+			+footer()
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAhZzO9IX_HC9UNK7zprYBqGYPCzTI8nPE&callback=initMap' async defer)
+		script.
+			function initMap() {
+				var uluru = {lat: 60.041359, lng: 30.318219};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 17,
+					center: uluru,
+					gestureHandling: 'cooperative',
+					scrollwheel:  false
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

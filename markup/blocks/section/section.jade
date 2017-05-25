@@ -1,20 +1,35 @@
-mixin section-main-1(data)
-    .section.section_welcome
-        .section__in
-            h2.section__title.title
-                span #{data.title}
-            block
+mixin section-welcome(data)
+	.section.section_welcome
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block
 
-mixin section-main-3(data)
-    .section.section_action
-        .section__in
-            h2.section__title.title
-                span #{data.title}
-            block
+mixin section-second(data)
+	.section.section_second
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block
 
 mixin section-main-2(data)
-    .section&attributes()
-        .section__in
-            h2.section__title.title
-                span #{data.title}
-            block
+	.section&attributes()
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block
+
+
+mixin section-about(data)
+	.section.section_about
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block
+
+mixin section-contacts(data)
+	.section.section_contacts
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block

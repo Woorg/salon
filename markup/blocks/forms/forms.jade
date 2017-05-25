@@ -1,0 +1,12 @@
+mixin form-contacts(data)
+	.form.form_contacts
+		p.form__text Пожалуйста, заполните форму ниже,<br/>и мы свяжемся с Вами.
+		form.form__form(action="", method="post")
+			.form__field
+				input.form__input(type="text", value="", placeholder="Имя*", name="name-1")
+			.form__field
+				input.form__input(type="text", value="", placeholder="Номер телефона*", name="name-2")
+			.form__field
+				input.form__input(type="text", value="", placeholder="Комментарий*", name="name-3")
+			.form__submit
+				input.button.button_submit(type="submit", value="отправить")

@@ -1,169 +1,172 @@
 // Common styles of the project
 
 html, body
-  height 100%
+	height 100%
 
 
 .page
-  min-width 980px
-  background #fff url(../images/general/bg.jpg) 50% 0 / cover no-repeat
-  font-family $acline
-  font-size 23px
-  font-variant small-caps
-  font-weight normal
-  letter-spacing tracking(120)
+	min-width 980px
+	background #fff url(../images/general/bg.jpg) 50% 0 no-repeat
+	background-size cover
+	font-family $acline
+	font-size 23px
+	font-variant small-caps
+	font-weight normal
+	letter-spacing tracking(120)
 
 .page__wrapper
-  min-height 100%
-  margin-bottom -50px
-  color #434343
-
+	min-height 100%
+	margin-bottom -50px
+	color #434343
 
 
 * html .page__wrapper
-  height 100%
+	height 100%
 
 .page__buffer
-  height 50px
+	height 50px
 
 
 .in
-  margin auto
-  padding-left 15px
-  padding-right 15px
-  width 980px
-  min-width 980px
+	margin auto
+	padding-left 15px
+	padding-right 15px
+	width 980px
+	min-width 980px
 
 // Sticky footer
 html, body
-  height 100%
+	height 100%
 
 .main
-  margin-bottom -325px
-  min-height 100%
+	margin-bottom -325px
+	min-height 100%
 * html .main
-  height 100%
+	height 100%
 
 .page__buffer
-  height 50px
+	height 50px
 
 
 // Titles
 
 .title-h1
-  font-size 62px
-  line-height 72px
-  text-transform uppercase
+	font-size 62px
+	line-height 72px
+	text-transform uppercase
 
 .title-h2
-  text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
-  color #8ebf43
-  font-size 35px
-  font-weight bold
-  line-height 42px
-  letter-spacing tracking(120)
-  text-transform uppercase
+	text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
+	color #8ebf43
+	font-size 35px
+	font-weight bold
+	line-height 42px
+	letter-spacing tracking(120)
+	text-transform uppercase
 
 .title-h3
-  text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
-  color #8ebf43
-  font-size 35px
-  font-weight bold
-  line-height 42px
-  letter-spacing tracking(120)
-  letter-spacing tracking(150)
+	text-shadow -2px 3px 2px rgba(255, 255, 255, 0.12)
+	color #8ebf43
+	font-size 35px
+	font-weight bold
+	line-height 42px
+	letter-spacing tracking(120)
+	letter-spacing tracking(150)
 
 .title-h4
-  font-size 16px
-  line-height 32px
-  text-transform lowercase
+	font-size 16px
+	line-height 32px
+	text-transform lowercase
 
 // Links
 
 a:link
-  text-decoration none
+	text-decoration none
 
 
 // General buttons
 
 .button
-  padding-top 8px
-  padding-left 30px
-  padding-bottom 11px
-  padding-right 30px
-  min-width 222px
-  display inline-block
-  vertical-align top
-  border 1px solid #fead20
-  border-width 1px 0 0
-  box-shadow 0 2px 1px rgba(255, 255, 255, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.24)
-  background-image linear-gradient(to top, #3d2203 0%, #a34908 13%, #fd9602 100%)
-  text-shadow 0 -2px 0 rgba(0, 0, 0, 0.23)
-  color #f5f8ee
-  font-size 15px
-  font-weight bold
-  line-height 18px
-  text-align center
-  text-transform uppercase
-  &:hover
-    opacity .95
-  &_alt
-    box-shadow 0 2px 1px rgba(0, 0, 0, 0.23), inset 0 1px 0 rgba(255, 255, 255, 0.24)
-    border 1px solid #fdcb69
-    border-width 1px 1px 0
-    background-image linear-gradient(to top, #663300 0%, #f7c284 13%, #fbfcfa 100%)
-    color #c76209
-    text-shadow 0 1px 0 #fff
-    span
-      position relative
-      &:after
-        position absolute
-        top 50%
-        right -20px
-        content ''
+	padding-top 8px
+	padding-left 30px
+	padding-bottom 11px
+	padding-right 30px
+	min-width 222px
+	display inline-block
+	vertical-align top
+	border 1px solid #fead20
+	border-width 1px 0 0
+	box-shadow 0 2px 1px rgba(255, 255, 255, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.24)
+	background-image linear-gradient(to top, #3d2203 0%, #a34908 13%, #fd9602 100%)
+	text-shadow 0 -2px 0 rgba(0, 0, 0, 0.23)
+	color #f5f8ee
+	font-size 15px
+	font-weight bold
+	line-height 18px
+	text-align center
+	text-transform uppercase
+	&:hover
+		opacity .95
+	&_alt
+		box-shadow 0 2px 1px rgba(0, 0, 0, 0.23), inset 0 1px 0 rgba(255, 255, 255, 0.24)
+		border 1px solid #fdcb69
+		border-width 1px 1px 0
+		background-image linear-gradient(to top, #663300 0%, #f7c284 13%, #fbfcfa 100%)
+		color #c76209
+		text-shadow 0 1px 0 #fff
+		span
+			position relative
+			&:after
+				position absolute
+				top 50%
+				right -20px
+				content ''
 
-  &_second
-    box-shadow 0 2px 1px rgba(0, 0, 0, 0.23), inset 0 1px 0 rgba(255, 255, 255, 0.24)
-    border 1px solid #b1c87d
-    border-width 1px 0 0
-    background-image linear-gradient(to top, #445e0c 0%, #749529 13%, #acd058 100%)
+	&_second
+		box-shadow 0 2px 1px rgba(0, 0, 0, 0.23), inset 0 1px 0 rgba(255, 255, 255, 0.24)
+		border 1px solid #b1c87d
+		border-width 1px 0 0
+		background-image linear-gradient(to top, #445e0c 0%, #749529 13%, #acd058 100%)
+	&_submit
+		display block
+		letter-spacing tracking(140)
 // Transition
 
 .transition
-  transition all .2s ease
+	transition all .2s ease
 
 // Inline block
 
 .ib
-  display inline-block
-  vertical-align top
+	display inline-block
+	vertical-align top
 
 
 // wysiwyg editor styles
 
 .wysiwyg
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6
-    letter-spacing tracking(150)
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		letter-spacing tracking(150)
 
-  h1
-    font-size 38px
-  h2
-    font-size 31px
-  h3
-    font-size 28px
-  h4
-    font-size 23px
-  h5
-    font-size 19px
+	h1
+		font-size 38px
+	h2
+		font-size 31px
+	h3
+		font-size 28px
+	h4
+		font-size 23px
+	h5
+		font-size 19px
 
-  p
-    margin-bottom 25px
+	p
+		margin-bottom 25px
 
 
 
