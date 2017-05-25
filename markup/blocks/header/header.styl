@@ -72,6 +72,8 @@
 		text-align center
 	.nav__item
 		position relative
+		border-left 1px solid #fff
+		border-right 1px solid #fff
 		margin-left -4px
 		margin-bottom 4px
 		display inline-block
@@ -79,22 +81,21 @@
 		background none
 		&.is_active,
 		&:hover
+			border-left 1px solid #8ebf43
+			border-right 1px solid #8ebf43
 			z-index 1
 			text-shadow none
-
 			a
-				border-left 1px solid #8ebf43
-				border-right 1px solid #8ebf43
 				color #8ebf43
 		&:first-child
-			.nav__link
-				border-right 1px solid #fff
+			border-right 1px solid #fff
+			border-left 1px solid transparent
 			&.is_active
-				a
-					border-right 1px solid #8ebf43
+				border-right 1px solid #8ebf43
+				border-left 1px solid #8ebf43
+
 
 	a
-		border-left 1px solid #fff
 		padding 0 14px
 		width 100%
 		font-size 29px

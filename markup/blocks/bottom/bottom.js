@@ -79,6 +79,6 @@
 			widgetStilization.prependTo(".widget_wrap");
 		}
 
-		pageWidget(['index', 'about']);
+		pageWidget(['index', 'about', 'contacts', 'blog']);
 
 }) ();
