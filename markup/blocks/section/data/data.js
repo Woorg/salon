@@ -19,6 +19,9 @@ section: {
     },
     contacts: {
         title: 'контакты'
+    },
+    blog: {
+        title: 'наш блог'
     }
 
 }

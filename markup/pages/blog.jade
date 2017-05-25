@@ -6,11 +6,11 @@ html(class="no-js", lang="ru")
 	include ../blocks/header/header
 	include ../blocks/section/section
 
-
+	include ../blocks/articles-list/articles-list
+	include ../blocks/pagination/pagination
 
 	include ../blocks/footer/footer
 	include ../blocks/bottom/bottom
-
 
 	head
 		+head(head.defaults)
@@ -20,6 +20,11 @@ html(class="no-js", lang="ru")
 		.page__wrapper
 			+header()
 
+			+section-general(section.blog)
+
+				+articles-list()
+
+				+pagination()
 
 
 			.page__buffer

@@ -1,3 +1,11 @@
+mixin section-general(data)
+	.section
+		.section__in
+			h2.section__title.title
+				span #{data.title}
+			block
+
+
 mixin section-welcome(data)
 	.section.section_welcome
 		.section__in
